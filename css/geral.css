@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(54, 54, 54)
+}
+
+#menu-superior li a{
+   text-decoration: none;
+}
+#menu-superior li{
+   display: inline;
+   padding-left: 20px;
+}
+
+#btnLogar{
+   margin-top:20px;
+   width: 480px;
+}
+
+
+#senha{
+   
+   margin-top:10px;
+
+}
+
+#menu-lateral{
+   background: rgb(255, 255, 255);
+   background: linear-gradient(9deg, rgba(254,254,254,1) 0%, rgba(0,92,170,1) 100%, rgba(254,254,254,1) 100%); 
+   height:700px;
+}
+#menu-lateral ul li a{
+   text-decoration: none;
+   color:#fefefe;
+}
+
+.row .formulario{
+    width: 700px;
+ }
+ 
+ .row .col-md-2{
+    width: 200px;
+ }
