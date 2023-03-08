@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gabriel Moreira Carvalho de Moraes">
+    <meta name="author" content="Rômulo Cesar Silvestre Leite">
     <meta name="description" content="sistema web de aprendizagem industrial">
     <meta name="generator" content="Visual Studio Code 1.75.1">
     <meta name="keywords" content="Java, C#, Ensino Industrial">
@@ -22,13 +22,13 @@
 <body>
 
 
-    <div class="container">
-        <!--Topo do Site-->
+    <div class="container"> <!--Container - vai guardar todos os componentes-->
+        <!--Componente Top do Site-->
         <div class="row">
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/senai-logo.png" width="200" alt="Bootstrap">
+                        <img src="img/senai-logo-1.png" width="200" alt="Bootstrap">
                         <ul id="menu-superior">
                             <li><a href="cadastrese.html">cadastre-se</a></li>
                             <li><a href="login.html">login</a></li>
@@ -38,9 +38,23 @@
             </nav>
         </div>
 
-       
-        <!-- Conteúdo -->
-        <div class="row">
+        <!--Encerramento do Topo do Site encerra uma linha.-->
+
+        <!--Linha Horizontal de Aplicativos-->
+        <div class="row text-center" style="margin-top: 10px;background-color:#517AFC;color:#fefefe">
+            <div class="col">
+                LearnCode Swing <img src="img/coffeecuplogoJava_5406.png" width="25">
+            </div>
+            <div class="col">
+                LearnCode Web <img src="img/java_script_icon_245059.png" width="25">
+            </div>
+            <div class="col">
+                LearnCode Spring <img src="img/1494258020-leafspringplantecologygreen_84346.png" width="25">
+            </div>
+        </div>
+
+        <!--Fim da linha horizontal de aplicativos-->
+        <div class="row" style="margin-top: 10px; ">
             <!-- Menu Lateral -->
             <div class="col-md-2" id="menu-lateral">
                 <ul class="nav flex-column">
@@ -51,85 +65,52 @@
                         <a class="nav-link" href="#">Links Úteis</a>
                     </li>
                 </ul>
-            </div> 
-            <div>
-                <h6>Cadastre-se </h6>
-            </div>          
+            </div>
+            <!--Formulário de Cadastre-se-->
+            <div class="col-md-6">
+                <h6>Cadastre-se</h6>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="login">Login:</label>
+                        <input type="text" class="form-control" id="login">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirma-senha">Confirma Senha:</label>
+                        <input type="password" class="form-control" id="confirma-senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </div> <!--fim da segunda linha-->
         <div class="row">
 
         </div>
-    </div>
+    </div> <!--Fechamento do Container-->
     <!-- Link para o jQuery e o Bootstrap JS -->
 
 
 
-    <!-- Inicio do formulario -->
-    <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Sobrenome</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label">email</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Senha</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div>
-        <div class="col-md-3">
-            <label for="validationCustom05" class="form-label">Confirmar Senha</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
-          </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Concordo com os termos
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Enviar</button>
-        </div>
-      </form>
-
-      <!-- Fim do formulario -->
 
 
 
 
+    
 
 
-
-
-
+    <!--inserirUsuario-->
+    <script src="js/inserirUsuario.js"></script>
 
 
     <!--Inserindo arquivo boostrap js-->
