@@ -21,43 +21,61 @@
 
 <body>
 
-
 <!-- As a link -->
-<img src="img/senai-logo-1.png" width="200" alt="Bootstrap"> 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <a href="index.html">
+  <img src="img/logo (1).png">
+</a>
+  <div class="container-fluid">
 
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" id="f" href="cadastrese.html">cadastra-se</a>
+    <a class="navbar-brand" href="cadastrese copy.html">increva-se</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+        </li>
+      </form>
     </div>
-  </nav>
-
-  <!-- As a link -->
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" id="f"  href="login.html">Entrar</a>
-    </div>
-  </nav>
+  </div>
+</nav>
 
         <!--Encerramento do Topo do Site encerra uma linha.-->
 
        
         <!-- Conteúdo -->
-        <div class="row">
-            <div class="row" style="margin-top: 10px; ">
-                <!-- Menu Lateral -->
-                <div class="col-md-2" id="menu-lateral">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Descubra Quem Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Explore Links Úteis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tira Duvidas</a>
-                        </li>
-                    </ul>
-                </div>
+
+        <div class="flexConteudo">
+          <div class="col-md-2" id="menu-lateral">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <label for="taguatinga">taguatinga</label>
+                  <input type="radio" name="opcao" id="taguatinga" alt="Opção referente a Taguatinga">              
+                </li>
+                <li >
+                  <label for="Brasilia">Brasilia</label>
+              <input type="radio" name="opcao" id="Brasilia">
+                </li>
+                <li >
+                  <label for="sobradinho">Sobradinho</label>
+              <input type="radio" name="opcao" id="sobradinho">
+                </li>
+                <li>
+                  <label for="gama">Gama</label>
+                  <input type="radio" name="opcao" id="gama" alt="Opção referente a Taguatinga">
+                </li>
+            </ul>
+        </div>
+        <img class="removeimagem" id="pegarImagem" src="./img/senai/senai_taguatinga.jpg" alt="">
+        <img class="removeimagem" id="pegarImagem" src="./img/senai/senai_brasilia.jpg" alt="">
+        <img class="removeimagem" id="pegarImagem" src="./img/senai/senai_sobradinho.jpg" alt="">
+        <img class="removeimagem" id="pegarImagem" src="./img/senai/senai_gama.jpg" alt="">
+        </div>
+
+
+
             <!--Área Principal da Página-->
             <div>
                   <h6>Página em Manutenção</h6>
@@ -70,19 +88,15 @@
     <!-- Link para o jQuery e o Bootstrap JS -->
 
 
-
-
-
-
-
-
-
+  
 
 
     <!--Inserindo arquivo boostrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+        <script src="./js/comportamentoImagem.js"></script>
 
 </body>
 

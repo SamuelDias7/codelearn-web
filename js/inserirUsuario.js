@@ -25,7 +25,8 @@ formulario.addEventListener('submit', (e) => { //tratamento de evento (submit)
 
   //localStorage 
 
+  sessionStorage.setItem('usuario', JSON.stringify(usuario))
   localStorage.setItem('usuario', JSON.stringify(usuario));
 
-  alert('Cadastro realizado com sucesso!');
+  alert('Seu cadastro foi realizado!');
 }); //esse parâteses representa o fim do ouvinte (evento)
