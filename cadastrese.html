@@ -22,75 +22,67 @@
 <body>
 
 
-    <div class="container"> <!--Container - vai guardar todos os componentes-->
-        <!--Componente Top do Site-->
-        <div class="row">
-            <nav class="navbar bg-body-tertiary">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/senai-logo-1.png" width="200" alt="Bootstrap">
-                        <ul id="menu-superior">
-                            <li><a href="cadastrese.html">cadastre-se</a></li>
-                            <li><a href="login.html">login</a></li>
-                        </ul>
-                    </a>
-                </div>
-            </nav>
-        </div>
+<!-- As a link -->
+<img src="img/senai-logo-1.png" width="200" alt="Bootstrap"> 
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="f" href="cadastrese.html">cadastra-se</a>
+    </div>
+  </nav>
+
+  <!-- As a link -->
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="f" href="login.html">Entrar</a>
+    </div>
+  </nav>
+
+
+
 
         <!--Encerramento do Topo do Site encerra uma linha.-->
 
-        <!--Linha Horizontal de Aplicativos-->
-        <div class="row text-center" style="margin-top: 10px;background-color:#517AFC;color:#fefefe">
-            <div class="col">
-                LearnCode Swing <img src="img/coffeecuplogoJava_5406.png" width="25">
-            </div>
-            <div class="col">
-                LearnCode Web <img src="img/java_script_icon_245059.png" width="25">
-            </div>
-            <div class="col">
-                LearnCode Spring <img src="img/1494258020-leafspringplantecologygreen_84346.png" width="25">
-            </div>
-        </div>
-
-        <!--Fim da linha horizontal de aplicativos-->
         <div class="row" style="margin-top: 10px; ">
             <!-- Menu Lateral -->
             <div class="col-md-2" id="menu-lateral">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Quem Somos</a>
+                        <a class="nav-link active" href="#">Descubra Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Links Úteis</a>
+                        <a class="nav-link" href="#">Explore Links Úteis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tira Duvidas</a>
                     </li>
                 </ul>
             </div>
             <!--Formulário de Cadastre-se-->
             <div class="col-md-6">
-                <h6>Cadastre-se</h6>
+                <h6 id="tentativa">Informe seus dados para realizar o cadastro:</h6>
                 <form>
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
+                    <div class="form-group" >
+                        <label for="nome" id="name">Informe o seu nome:</label>
                         <input type="text" class="form-control" id="nome">
                     </div>
-                    <div class="form-group">
-                        <label for="sobrenome">Sobrenome:</label>
+                    <div class="form-group" >
+                        <label for="sobrenome" id="lastname">informe seu sobrenome:</label>
                         <input type="text" class="form-control" id="sobrenome">
                     </div>
-                    <div class="form-group">
-                        <label for="login">Login:</label>
+                    <div class="form-group" >
+                        <label for="login" id="User">Informe seu login:</label>
                         <input type="text" class="form-control" id="login">
                     </div>
                     <div class="form-group">
-                        <label for="senha">Senha:</label>
+                        <label for="senha" id="senhas">Informe sua senha:</label>
                         <input type="password" class="form-control" id="senha">
                     </div>
                     <div class="form-group">
-                        <label for="confirma-senha">Confirma Senha:</label>
+                        <label for="confirma-senha" id="confirmarsenhas">Confirme sua senha:</label>
                         <input type="password" class="form-control" id="confirma-senha">
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" id="a" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div> <!--fim da segunda linha-->
